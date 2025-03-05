@@ -1,0 +1,24 @@
+{
+  "name": "Ctrl Last Tab",
+  "description": "shortcuts for last tab",
+  "version": "1.0",
+  "manifest_version": 3,
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "ctrl_popup.html"
+  },
+  "icons": {
+    "16": "dona_16x16.png",
+    "48": "dona_48x48.png",
+    "128": "dona_128x128.png"
+  },
+  "permissions": ["tabs", "commands"],
+  "commands": {
+    "num5": { "suggested_key": { "default": "Ctrl+5" }, "description": "Switch to tab 5 or last" },
+    "num6": { "suggested_key": { "default": "Ctrl+6" }, "description": "Switch to tab 6 or last" },
+    "num7": { "suggested_key": { "default": "Ctrl+7" }, "description": "Switch to tab 7 or last" },
+    "num8": { "suggested_key": { "default": "Ctrl+8" }, "description": "Switch to tab 8 or last" }
+  }
+}
